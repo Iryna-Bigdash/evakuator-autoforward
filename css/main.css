@@ -1,0 +1,36 @@
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    outline: 1px solid red;
+}
+
+/* Для мобільних пристроїв (менше ніж 480px) */
+@media screen and (max-width: 479px) {
+    .container {
+        width: 100%;
+        /* Контейнер займає всю ширину екрана */
+    }
+}
+
+/* Для пристроїв від 480px до 767px */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 480px;
+    }
+}
+
+/* Для пристроїв від 768px і більше */
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+
+
+.hamburger-btn {
+    width: 40px;
+    height: 40px;
+}

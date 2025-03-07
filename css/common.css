@@ -1,0 +1,53 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #050103;
+    --accent-blue: #2196F3;
+    --accent-yellow: #fdca00;
+    --primary-white-color: #FFFFFF;
+    --secondary-bg-color: #f9f9f9;
+    --transition-func: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+body {
+    color: var(--primary-text-color);
+    background: var(--primary-white-color);
+
+    font-family: Montserrat, sans-serif;
+    letter-spacing: -0.01em;
+    font-size: 18px;
+    line-height: 1.67;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
