@@ -19,9 +19,11 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <a href="#" class="logo">Авто<span class="logo-blue">Форвард</span></a>
-
         <nav class="main-nav">
+          <a href="#" class="logo"
+            >Авто<span class="logo-blue">Форвард</span></a
+          >
+
           <ul class="nav-list">
             <li class="item">
               <a>Ціни</a>
@@ -44,13 +46,11 @@
             </li>
           </ul>
         </nav>
-
-        <button class="hamburger-btn">Open mob-menu</button>
       </div>
     </header>
     <main>
       <!-- Hero -->
-      <section class="section">
+      <section class="section hero">
         <div class="container">
           <h1 class="hero-title">ЕВАКУАТОР В УКРАЇНІ</h1>
           <p class="hero-subtitle">Швидка подача</p>
@@ -59,7 +59,7 @@
           <a href="tel:+380960200013" class="button primary tel-link"
             >+380 (96) 020 00 13</a
           >
-          <p>приїдемо за 25хв</p>
+          <p class="hero-text">приїдемо за 25хв</p>
         </div>
       </section>
 
@@ -68,21 +68,28 @@
         <div class="container">
           <h2 class="section-title">Як замовити евакуатор?</h2>
 
-          <ul class="order-steps">
+          <ul class="order-list">
             <li class="item">
-              <img src="./images/svg-hold.png" alt="" />
+              <svg class="order-icon">
+                <use href="./images/icons.svg#icon-phone" />
+              </svg>
+
               <p class="number">1</p>
               <h3 class="secondary-title">зателефонуйте нам</h3>
             </li>
 
             <li class="item">
-              <img src="./images/svg-hold.png" alt="" />
+              <svg class="order-icon">
+                <use href="./images/icons.svg#icon-location" />
+              </svg>
               <p class="number">2</p>
               <h3 class="secondary-title">ПОВІДОМТЕ СВОЄ місце перебування</h3>
             </li>
 
             <li class="item">
-              <img src="./images/svg-hold.png" alt="" />
+              <svg class="order-icon">
+                <use href="./images/icons.svg#icon-evakuator" />
+              </svg>
               <p class="number">3</p>
               <h3 class="secondary-title">Очікуйте Евакуатор</h3>
             </li>
@@ -97,11 +104,19 @@
 
           <ul class="price-list">
             <li class="item">
-              <img src="./images/price-hold.png" alt="" />
+              <div class="icon-thumb">
+                <svg class="price-icon">
+                  <use href="./images/icons.svg#icon-trunk" />
+                </svg>
+              </div>
               <h3 class="secondary-title">Подача евакуатора – від 450 грн.</h3>
             </li>
             <li class="item">
-              <img src="./images/price-hold.png" alt="" />
+              <div class="icon-thumb">
+                <svg class="price-icon">
+                  <use href="./images/icons.svg#icon-payment" />
+                </svg>
+              </div>
               <h3 class="secondary-title">
                 Вартість перевезення – від 15 грн/км.
               </h3>
@@ -114,13 +129,14 @@
             перевертання автомобіля після ДТП. Остаточна вартість евакуації
             розраховується індивідуально та уточнюється з диспетчером під час
             замовлення. Після узгодження ціна залишається фіксованою та не
-            змінюється.  Звертаємо увагу, що на деяких онлайн-майданчиках, таких
-            як OLX, можна зустріти пропозиції з підозріло низькими цінами.
-            Замовляючи такі послуги, ви ризикуєте технічним станом свого
-            автомобіля, оскільки перевезення може виконуватися некваліфікованими
-            водіями без належного обладнання. Спроба заощадити 100–200 грн
-            нерідко обертається дорогим ремонтом, спричиненим неправильною
-            завантаженням або транспортуванням авто.
+            змінюється. <br />
+            Звертаємо увагу, що на деяких онлайн-майданчиках, таких як OLX,
+            можна зустріти пропозиції з підозріло низькими цінами. Замовляючи
+            такі послуги, ви ризикуєте технічним станом свого автомобіля,
+            оскільки перевезення може виконуватися некваліфікованими водіями без
+            належного обладнання. Спроба заощадити 100–200 грн нерідко
+            обертається дорогим ремонтом, спричиненим неправильною завантаженням
+            або транспортуванням авто.
           </p>
         </div>
       </section>
@@ -129,8 +145,8 @@
       <section>
         <div class="container">
           <h2 class="section-title">Наші переваги</h2>
-          <ul>
-            <li>
+          <ul class="preferences-list">
+            <li class="item">
               <img src="./images/svg-hold.png" alt="" />
               <h3 class="secondary-title">Швидка подача</h3>
               <p>
@@ -139,7 +155,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="item">
               <img src="./images/svg-hold.png" alt="" />
               <h3 class="secondary-title">
                 Прозора ціна без прихованих платежів
@@ -150,7 +166,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="item">
               <img src="./images/svg-hold.png" alt="" />
               <h3 class="secondary-title">Цілодобова робота 24/7</h3>
               <p>
@@ -160,7 +176,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="item">
               <img src="./images/svg-hold.png" alt="" />
               <h3 class="secondary-title">
                 Власний автопарк сучасних евакуаторів
@@ -171,7 +187,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="item">
               <img src="./images/svg-hold.png" alt="" />
               <h3 class="secondary-title">Досвідчені водії та оператори</h3>
               <p>
@@ -358,7 +374,9 @@
     <footer>
       <div class="container">
         <div class="footer-logo">
-          <a href="#">Авто <span>Форвард</span></a>
+          <a href="#" class="logo"
+            >Авто<span class="logo-blue">Форвард</span></a
+          >
         </div>
 
         <div class="footer-contact">

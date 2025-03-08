@@ -30,16 +30,29 @@
 
 /* header */
 
+.page-header {
+    background-color: var(--primary-white-color);
+}
+
+.main-nav {
+    display: flex;
+}
+
 .logo {
     color: var(--accent-yellow);
     font-family: Oswald;
     font-weight: bold;
     font-size: 32px;
     line-height: 1.19;
+    margin-right: auto;
 }
 
 .logo-blue {
     color: var(--accent-blue);
+}
+
+.nav-list {
+    margin-left: auto;
 }
 
 .nav-list .item a {
@@ -48,34 +61,67 @@
 }
 
 /* hero */
+.hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: black;
+    text-align: end;
+}
 
 .hero-title {
+    color: var(--primary-white-color);
     font-weight: bold;
     font-size: 30px;
     text-transform: uppercase;
     line-height: 1.615;
     letter-spacing: 0.04em;
+
+    margin-bottom: 60px;
 }
 
 .hero-subtitle {
+    color: var(--primary-white-color);
     font-weight: bold;
     font-size: 28px;
     text-transform: uppercase;
     line-height: 1.6;
     letter-spacing: 0.04em;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    text-align: start;
 }
 
 .tel-link {
     font-size: 20px;
+    margin-top: 20px;
 }
 
 /* order section */
-.order-steps .item img {
-    width: 100px;
-    height: 100px;
+.order-list {
+    outline: 1px solid blue;
+    display: flex;
+    gap: 5px;
+
 }
 
-.order-steps .item .number {
+.order-list .item {
+    padding: 10px;
+    text-align: center;
+    flex-basis: calc((100% - 10px) / 3);
+}
+
+
+.order-icon {
+    width: 100px;
+    height: 100px;
+    fill: var(--accent-yellow);
+
+}
+
+.order-list .item .number {
     color: #212121;
     font-weight: 700;
     text-transform: uppercase;
@@ -85,21 +131,68 @@
 
 
 /* price section */
+.price-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.price-list .item {
+    flex-basis: calc((100% - 30px) / 2);
+    align-items: center;
+    padding: 10px;
+}
+
+.icon-thumb {
+    margin-bottom: 10px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.price-icon {
+    width: 70px;
+    height: 70px;
+}
+
+/* preferences */
+
+.preferences-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.preferences-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.preferences-list .item:nth-child(2n) {
+    background-color: #F5F4FA;
+}
 
 /* section */
+
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .section-title {
     color: var(--title-text-color);
     font-size: 28px;
     text-align: center;
+    margin-bottom: 20px;
 
 }
 
 .secondary-title {
     color: #212121;
-    font-weight: 500;
     text-transform: uppercase;
-    line-height: normal;
-    letter-spacing: 0.48px;
+    line-height: 1.2;
+    font-size: 16px;
 }
 
 .button {

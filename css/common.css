@@ -25,6 +25,10 @@ ul {
     padding: 0;
 }
 
+li {
+    outline: 1px solid yellowgreen;
+}
+
 a {
     text-decoration: none;
 }
