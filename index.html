@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Викликати евакуатор швидко та недорого Київ та область</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/modern-normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/common.css" />
@@ -12,47 +19,72 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <a href="#">Авто <span>Форвард</span></a>
-        <button class="hamburger-btn">
-          <!-- <svg>
-              <use href="./images/burger-menu.svg" />
-            </svg> -->
-        </button>
+        <a href="#" class="logo">Авто<span class="logo-blue">Форвард</span></a>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="item">
+              <a>Ціни</a>
+            </li>
+
+            <li class="item">
+              <a>Наші переваги</a>
+            </li>
+
+            <li class="item">
+              <a>Виклик евакуатора</a>
+            </li>
+
+            <li class="item">
+              <a>Відгуки</a>
+            </li>
+
+            <li class="item">
+              <a>Про нас</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="hamburger-btn">Open mob-menu</button>
       </div>
     </header>
     <main>
+      <!-- Hero -->
       <section class="section">
         <div class="container">
-          <h1>ЕВАКУАТОР В УКРАЇНІ</h1>
-          <p>Швидка подача</p>
-          <p>Прозора ціна</p>
+          <h1 class="hero-title">ЕВАКУАТОР В УКРАЇНІ</h1>
+          <p class="hero-subtitle">Швидка подача</p>
+          <p class="hero-subtitle">Прозора ціна</p>
 
-          <a href="tel:+380960200013">+380 (96) 020 00 13</a>
+          <a href="tel:+380960200013" class="button primary tel-link"
+            >+380 (96) 020 00 13</a
+          >
           <p>приїдемо за 25хв</p>
         </div>
       </section>
 
+      <!-- how to order -->
       <section class="section">
         <div class="container">
-          <h2>Як замовити евакуатор?</h2>
+          <h2 class="section-title">Як замовити евакуатор?</h2>
 
-          <ul>
-            <li>
+          <ul class="order-steps">
+            <li class="item">
               <img src="./images/svg-hold.png" alt="" />
-              <p>1</p>
-              <p>зателефонуйте нам</p>
+              <p class="number">1</p>
+              <h3 class="secondary-title">зателефонуйте нам</h3>
             </li>
 
-            <li>
+            <li class="item">
               <img src="./images/svg-hold.png" alt="" />
-              <p>2</p>
-              <p>ПОВІДОМТЕ СВОЄ місце перебування</p>
+              <p class="number">2</p>
+              <h3 class="secondary-title">ПОВІДОМТЕ СВОЄ місце перебування</h3>
             </li>
 
-            <li>
+            <li class="item">
               <img src="./images/svg-hold.png" alt="" />
-              <p>3</p>
-              <p>Очікуйте Евакуатор</p>
+              <p class="number">3</p>
+              <h3 class="secondary-title">Очікуйте Евакуатор</h3>
             </li>
           </ul>
         </div>
@@ -61,16 +93,18 @@
       <!-- price -->
       <section class="section">
         <div class="container">
-          <h2>Ціна на евакуатор в Україні</h2>
+          <h2 class="section-title">Ціна на евакуатор в Україні</h2>
 
-          <ul>
-            <li>
+          <ul class="price-list">
+            <li class="item">
               <img src="./images/price-hold.png" alt="" />
-              <h3>Подача евакуатора – від 450 грн.</h3>
+              <h3 class="secondary-title">Подача евакуатора – від 450 грн.</h3>
             </li>
-            <li>
+            <li class="item">
               <img src="./images/price-hold.png" alt="" />
-              <h3>Вартість перевезення – від 15 грн/км.</h3>
+              <h3 class="secondary-title">
+                Вартість перевезення – від 15 грн/км.
+              </h3>
             </li>
           </ul>
 
@@ -94,11 +128,11 @@
       <!-- Preferences -->
       <section>
         <div class="container">
-          <h2>Наші переваги</h2>
+          <h2 class="section-title">Наші переваги</h2>
           <ul>
             <li>
               <img src="./images/svg-hold.png" alt="" />
-              <h3>Швидка подача</h3>
+              <h3 class="secondary-title">Швидка подача</h3>
               <p>
                 Прибуття на місце від 10 до 35 хвилин, залежно від району та
                 трафіку.
@@ -107,7 +141,9 @@
 
             <li>
               <img src="./images/svg-hold.png" alt="" />
-              <h3>Прозора ціна без прихованих платежів</h3>
+              <h3 class="secondary-title">
+                Прозора ціна без прихованих платежів
+              </h3>
               <p>
                 Прибуття вартість узгоджується з диспетчером і не змінюється
                 після оформлення замовлення.
@@ -116,7 +152,7 @@
 
             <li>
               <img src="./images/svg-hold.png" alt="" />
-              <h3>Цілодобова робота 24/7</h3>
+              <h3 class="secondary-title">Цілодобова робота 24/7</h3>
               <p>
                 Працюємо без вихідних у Києві та передмісті. Якщо вам необхідний
                 евакуатор з Києва в Одесу чи інше місто України, подачу
@@ -126,7 +162,9 @@
 
             <li>
               <img src="./images/svg-hold.png" alt="" />
-              <h3>Власний автопарк сучасних евакуаторів</h3>
+              <h3 class="secondary-title">
+                Власний автопарк сучасних евакуаторів
+              </h3>
               <p>
                 Гарантуємо безпечне перевезення будь-якого авто, включаючи
                 спорткари та позашляховики.
@@ -135,7 +173,7 @@
 
             <li>
               <img src="./images/svg-hold.png" alt="" />
-              <h3>Досвідчені водії та оператори</h3>
+              <h3 class="secondary-title">Досвідчені водії та оператори</h3>
               <p>
                 Професійний підхід до кожного замовлення, навіть у складних
                 ситуаціях (ДТП, авто в кюветі, заблоковані колеса).
@@ -148,7 +186,7 @@
       <!-- how to call -->
       <section class="section">
         <div class="container">
-          <h2>Які дані надати при виклику евакуатора?</h2>
+          <h2 class="section-title">Які дані надати при виклику евакуатора?</h2>
           <div class="img-thumb">
             <img src="./images/customer-service.png" alt="" />
             <p>Для Швидкої подачі Евакуатора в будь який район Київа</p>
@@ -178,7 +216,7 @@
 
       <section>
         <div class="container">
-          <h2>Карта покриття в Києві та області</h2>
+          <h2 class="section-title">Карта покриття в Києві та області</h2>
           <div class="img-thumb">
             <img src="./images/ucraine-map.jpg" alt="" />
           </div>
@@ -204,7 +242,7 @@
       <!-- servises -->
       <section class="section">
         <div class="container">
-          <h2>Послуги евакуатора в Києві та Україні</h2>
+          <h2 class="section-title">Послуги евакуатора в Києві та Україні</h2>
           <p>
             Наша компанія пропонує широкий спектр послуг з автоевакуації у Києві
             та по Україні, серед яких:
@@ -236,7 +274,7 @@
       <!-- clients reviws -->
       <section class="section">
         <div class="container">
-          <h2>Відгуки</h2>
+          <h2 class="section-title">Відгуки</h2>
           <ul>
             <li>
               <img src="" alt="" />
@@ -300,7 +338,7 @@
 
       <section class="section">
         <div class="container">
-          <h2>Про нас</h2>
+          <h2 class="section-title">Про нас</h2>
           <p>
             Потрапили в ДТП або ваша машина раптово зламалася, і вам терміново
             потрібен евакуатор у Києві? Телефонуйте нашому оператору – ми
@@ -340,7 +378,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/header.js"></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/header.js"></script>
+    <script defer src="./js/mobile-menu.js"></script> -->
   </body>
 </html>
