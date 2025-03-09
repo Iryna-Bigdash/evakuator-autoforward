@@ -95,9 +95,18 @@
 }
 
 .tel-link {
-    font-size: 20px;
     margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
 }
+
+.support-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
 
 /* order section */
 .order-list {
@@ -199,39 +208,63 @@
 
 .evacuation-list li {
     position: relative;
-    padding-left: 30px;
     font-size: 18px;
     margin-bottom: 10px;
     color: #444;
 }
 
-.evacuation-list li::before {
-    content: "—";
-    /* Довге тире */
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 20px;
-    font-weight: bold;
+.evacuation-list li::marker {
     color: var(--accent-blue);
-    /* Помаранчевий акцент */
+    font-weight: bold;
 }
 
-.evacuation-info strong {
+.evacuation-info strong,
+.work-location strong {
     color: var(--accent-blue);
 }
 
 /* work-location */
+.districts-list {
+    padding: 10px 0;
+}
+
 .map-thumb {
     width: 100%;
     height: 300px;
+    background-color: #f7f7f7;
     background-image: url('../images/ukraine-map.png');
-    /* Шлях до зображення */
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+.work-location .secondary-title {
+    margin: 10px 0;
+}
+
+.districts-list {
+    margin-bottom: 10px;
+}
+
+.districts-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.districts-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+    font-weight: bold;
+}
+
+.action-text {
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 /* section */
@@ -241,18 +274,23 @@
     padding-bottom: 40px;
 }
 
+.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .section-title {
     color: var(--title-text-color);
     font-size: 28px;
     text-align: center;
     margin-bottom: 20px;
+    line-height: 1.4;
 
 }
 
 .secondary-title {
     color: #212121;
     text-transform: uppercase;
-    line-height: 1.2;
     font-size: 16px;
 }
 
@@ -263,8 +301,6 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 1.14;
-
-    display: inline-block;
     border-radius: 6px;
     border: 1px solid transparent;
     padding: 11px 34px;
