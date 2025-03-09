@@ -160,17 +160,78 @@
 .preferences-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
-.preferences-list {
+.preferences-list .item {
+    padding: 10px;
     display: flex;
-    flex-direction: column;
     gap: 20px;
+    align-items: center;
 }
 
 .preferences-list .item:nth-child(2n) {
     background-color: #F5F4FA;
+}
+
+.preferences-list .icon-thumb {
+    background-color: inherit;
+    margin-bottom: 0;
+}
+
+.preferences-icon {
+    width: 110px;
+    height: 110px;
+}
+
+.preferences-discription .secondary-title {
+    margin-bottom: 10px;
+}
+
+/* order-details */
+.order-details .secondary-title {
+    margin-bottom: 10px;
+}
+
+.order-details .img-thumb {
+    margin-bottom: 20px;
+}
+
+.evacuation-list li {
+    position: relative;
+    padding-left: 30px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.evacuation-list li::before {
+    content: "—";
+    /* Довге тире */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--accent-blue);
+    /* Помаранчевий акцент */
+}
+
+.evacuation-info strong {
+    color: var(--accent-blue);
+}
+
+/* work-location */
+.map-thumb {
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/ukraine-map.png');
+    /* Шлях до зображення */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 /* section */
