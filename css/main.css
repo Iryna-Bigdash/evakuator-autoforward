@@ -31,7 +31,10 @@
 /* header */
 
 .page-header {
-    background-color: var(--primary-white-color);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+
+    border-bottom: 2px solid var(--primary-white-color);
+
 }
 
 .main-nav {
@@ -61,12 +64,16 @@
 }
 
 /* hero */
-.hero {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    background-color: black;
+.hero .container {
     text-align: end;
+    padding: 40px 20px;
+
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+        url('../images/banner-opacity.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
 }
 
 .hero-title {
@@ -92,6 +99,7 @@
 
 .hero-text {
     text-align: start;
+    color: var(--accent-yellow);
 }
 
 .tel-link {
@@ -204,9 +212,20 @@
 
 .order-details .img-thumb {
     margin-bottom: 20px;
+    max-width: 450px;
+    max-height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url('../images/customer-service.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #444;
 }
 
-.evacuation-list li {
+.evacuation-list li,
+.services-list li {
     position: relative;
     font-size: 18px;
     margin-bottom: 10px;
@@ -248,13 +267,15 @@
     margin-bottom: 10px;
 }
 
-.districts-list li {
+.districts-list li,
+.services-list li {
     position: relative;
     padding-left: 20px;
     margin-bottom: 10px;
 }
 
-.districts-list li::before {
+.districts-list li::before,
+.services-list li::before {
     content: "—";
     position: absolute;
     left: 0;
@@ -267,7 +288,91 @@
     font-size: 18px;
 }
 
+/* reviews */
+
+.reviews {
+    background-color: #F5F4FA;
+}
+
+.reviews-wrapper {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.reviews {
+    display: flex;
+    gap: 20px;
+}
+
+.review {
+    flex: 0 0 80%;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+.review-avatar {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.review-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.review-stars {
+    color: var(--accent-yellow);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #333;
+}
+
+/* about */
+
+.about p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+    color: var(--title-text-color);
+}
+
+.contacts {
+    color: #F5F4FA;
+    font-size: 14px;
+}
+
+
+.flex-footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.privacy-container {
+    text-align: center;
+}
+
 /* section */
+.services-subtitle {
+    margin-bottom: 20px;
+}
 
 .section {
     padding-top: 40px;
@@ -303,8 +408,8 @@
     line-height: 1.14;
     border-radius: 6px;
     border: 1px solid transparent;
-    padding: 11px 34px;
-    min-width: 130px;
+    padding: 11px 18px;
+    min-width: 120px;
     text-align: center;
 
 }
