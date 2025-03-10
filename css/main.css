@@ -3,7 +3,7 @@
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 /* Для мобільних пристроїв (менше ніж 480px) */
@@ -31,11 +31,13 @@
 /* header */
 
 .page-header {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
-
     border-bottom: 2px solid var(--primary-white-color);
-
+    padding: 20px 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
 }
+
+
+
 
 .main-nav {
     display: flex;
@@ -48,6 +50,12 @@
     font-size: 32px;
     line-height: 1.19;
     margin-right: auto;
+}
+
+@media (max-width: 410px) {
+    .logo {
+        font-size: 26px;
+    }
 }
 
 .logo-blue {
@@ -64,10 +72,16 @@
 }
 
 /* hero */
+
+.hero {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+
+
+}
+
 .hero .container {
     text-align: end;
     padding: 40px 20px;
-
     background-image:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
         url('../images/banner-opacity.png');
@@ -120,14 +134,14 @@
 .order-list {
     outline: 1px solid blue;
     display: flex;
-    gap: 5px;
+    gap: 2px;
 
 }
 
 .order-list .item {
     padding: 10px;
     text-align: center;
-    flex-basis: calc((100% - 10px) / 3);
+    flex-basis: calc((100% - 4px) / 3);
 }
 
 
@@ -136,6 +150,13 @@
     height: 100px;
     fill: var(--accent-yellow);
 
+}
+
+@media (max-width: 410px) {
+    .order-icon {
+        width: 90px;
+        height: 90px;
+    }
 }
 
 .order-list .item .number {
@@ -162,7 +183,7 @@
 
 .icon-thumb {
     margin-bottom: 10px;
-    background-color: #F5F4FA;
+    background-color: var(--secondary-bg-color);
     border-radius: 4px;
     text-align: center;
 }
@@ -188,7 +209,7 @@
 }
 
 .preferences-list .item:nth-child(2n) {
-    background-color: #F5F4FA;
+    background-color: var(--secondary-bg-color);
 }
 
 .preferences-list .icon-thumb {
@@ -197,8 +218,8 @@
 }
 
 .preferences-icon {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
 }
 
 .preferences-discription .secondary-title {
@@ -291,7 +312,7 @@
 /* reviews */
 
 .reviews {
-    background-color: #F5F4FA;
+    background-color: var(--secondary-bg-color);
 }
 
 .reviews-wrapper {
@@ -352,21 +373,14 @@
     color: var(--title-text-color);
 }
 
-.contacts {
-    color: #F5F4FA;
-    font-size: 14px;
-}
-
-
-.flex-footer {
-    display: flex;
-    justify-content: space-between;
-
-    margin-bottom: 20px;
-}
-
 .privacy-container {
+    margin-top: 40px;
     text-align: center;
+}
+
+.privacy-policy {
+    color: var(--title-text-color);
+    text-decoration: underline;
 }
 
 /* section */
@@ -396,7 +410,13 @@
 .secondary-title {
     color: #212121;
     text-transform: uppercase;
-    font-size: 16px;
+}
+
+@media (max-width: 490px) {
+    .secondary-title {
+        font-size: 15px;
+        letter-spacing: 0.01em;
+    }
 }
 
 .button {
