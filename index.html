@@ -20,31 +20,53 @@
     <header class="page-header">
       <div class="container">
         <nav class="main-nav">
-          <a href="#" class="logo"
+          <a href="index.html#" class="logo"
             >Авто<span class="logo-blue">Форвард</span></a
           >
 
-          <!-- <ul class="nav-list">
-            <li class="item">
-              <a>Ціни</a>
-            </li>
+          <div class="menu-container" data-menu id="menu-container">
+            <ul class="nav-list">
+              <li class="item">
+                <a href="index.html#price">Ціни</a>
+              </li>
 
-            <li class="item">
-              <a>Наші переваги</a>
-            </li>
+              <li class="item">
+                <a href="index.html#preferences">Наші переваги</a>
+              </li>
 
-            <li class="item">
-              <a>Виклик евакуатора</a>
-            </li>
+              <li class="item">
+                <a href="index.html#order-details">Виклик евакуатора</a>
+              </li>
 
-            <li class="item">
-              <a>Відгуки</a>
-            </li>
+              <li class="item">
+                <a href="index.html#reviews">Відгуки</a>
+              </li>
 
-            <li class="item">
-              <a>Про нас</a>
-            </li>
-          </ul> -->
+              <li class="item">
+                <a href="index.html#about">Про нас</a>
+              </li>
+            </ul>
+          </div>
+
+          <button
+            type="button"
+            data-menu-button
+            aria-expanded="false"
+            aria-controls="menu-container"
+            class="menu-button"
+            aria-label="Перемикач мобільного меню"
+          >
+            <svg width="40px" height="40px">
+              <use
+                class="icon-cross"
+                href="./images/icons.svg#icon-close"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/icons.svg#icon-burger-menu"
+              ></use>
+            </svg>
+          </button>
         </nav>
       </div>
     </header>
@@ -105,7 +127,7 @@
       <!-- price -->
       <section class="section no-padding">
         <div class="container">
-          <h2 class="section-title">Ціна на евакуатор в Україні</h2>
+          <h2 class="section-title" id="price">Ціна на евакуатор в Україні</h2>
 
           <ul class="price-list">
             <li class="item">
@@ -147,7 +169,7 @@
       </section>
 
       <!-- Preferences -->
-      <section class="section">
+      <section class="section" id="preferences">
         <div class="container">
           <h2 class="section-title">Наші переваги</h2>
           <ul class="preferences-list">
@@ -236,7 +258,7 @@
       </section>
 
       <!-- order-details -->
-      <section class="section order-details no-padding">
+      <section class="section order-details no-padding" id="order-details">
         <div class="container">
           <h2 class="section-title">Які дані надати при виклику евакуатора?</h2>
           <div class="img-thumb"></div>
@@ -353,7 +375,7 @@
       </section>
 
       <!-- services -->
-      <section class="section no-padding">
+      <section class="section services">
         <div class="container">
           <h2 class="section-title">Послуги евакуатора в Києві та Україні</h2>
           <p class="services-subtitle">
@@ -388,7 +410,7 @@
       </section>
 
       <!-- clients reviews -->
-      <section class="section reviews">
+      <section class="section reviews" id="reviews">
         <div class="container">
           <h2 class="section-title">Відгуки</h2>
           <div class="reviews-wrapper">
@@ -441,7 +463,7 @@
       </section>
 
       <!-- about -->
-      <section class="section about">
+      <section class="section about" id="about">
         <div class="container">
           <h2 class="section-title">Про нас</h2>
           <p>
@@ -482,7 +504,7 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="./js/header.js"></script>
-    <script defer src="./js/mobile-menu.js"></script> -->
+    <script src="./scripts/header.js"></script>
+    <script defer src="./scripts/mobile-menu.js"></script>
   </body>
 </html>

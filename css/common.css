@@ -8,6 +8,10 @@
     --transition-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* :target {
+    scroll-margin-top: 80px;
+} */
+
 body {
     color: var(--primary-text-color);
     background: var(--primary-white-color);
