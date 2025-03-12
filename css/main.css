@@ -32,12 +32,10 @@
 .page-header {
     border-bottom: 2px solid var(--primary-white-color);
     background-color: var(--primary-white-color);
-
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-
     z-index: 999;
 }
 
@@ -86,6 +84,11 @@
     line-height: 1.14;
 }
 
+
+.menu-position {
+    position: relative;
+}
+
 .menu-button {
     background-color: transparent;
     border: none;
@@ -109,20 +112,22 @@
 
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
-    height: 500px;
-    font-size: 24px;
-    background-color: var(--accent-blue);
-    padding: 20px;
+    right: 0;
+    min-width: 50%;
+    font-size: 22px;
+    background: rgba(33, 150, 243, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+
+    padding: 40px;
 }
+
 
 .menu-container.is-open {
     display: block;
 }
 
 /* hero */
-
 .hero .container {
     text-align: end;
     padding: 40px 20px;
