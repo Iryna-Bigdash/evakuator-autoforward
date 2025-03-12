@@ -50,14 +50,16 @@
 
 .main-nav {
     display: flex;
+    align-items: center;
 }
 
 .logo {
     color: var(--accent-yellow);
-    font-family: Oswald;
+    font-family: Oswald, sans-serif;
     font-weight: bold;
     font-size: 32px;
     line-height: 1.19;
+    letter-spacing: -0.5px;
     margin-right: auto;
 }
 
@@ -120,12 +122,6 @@
 }
 
 /* hero */
-
-.hero {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
-
-
-}
 
 .hero .container {
     text-align: end;
@@ -247,6 +243,14 @@
     height: 70px;
 }
 
+.price-additional {
+    margin: 12px 0;
+}
+
+.price-text {
+    margin-bottom: 16px;
+}
+
 /* preferences */
 
 .preferences-list {
@@ -302,18 +306,17 @@
 .evacuation-list li,
 .services-list li {
     position: relative;
-    font-size: 18px;
     margin-bottom: 10px;
     color: #444;
 }
 
-.evacuation-list li::marker {
+.evacuation-list li::marker,
+.price-details li::marker {
     color: var(--accent-blue);
     font-weight: bold;
 }
 
-.evacuation-info strong,
-.work-location strong {
+.text-blue {
     color: var(--accent-blue);
 }
 
@@ -360,7 +363,7 @@
 
 .action-text {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 /* reviews */
@@ -412,7 +415,6 @@
 }
 
 .review-text {
-    font-size: 16px;
     color: #333;
 }
 
@@ -423,18 +425,57 @@
 }
 
 .footer {
+    padding: 20px 0;
+    letter-spacing: -0.5px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
-    color: var(--title-text-color);
 }
 
 .privacy-container {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
 }
 
 .privacy-policy {
-    color: var(--title-text-color);
+    color: var(--primary-text-color);
     text-decoration: underline;
+}
+
+/* privacy-policy page */
+
+.privacy-header {
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    /* Додай фон, щоб не перекривалося контентом */
+    z-index: 1000;
+    /* Щоб хедер був поверх інших елементів */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Невелика тінь для розділення */
+}
+
+.privacy-header .back {
+    color: var(--accent-blue);
+}
+
+.section.privacy {
+    border-top: 1px solid var(--primary-text-color);
+    border-bottom: 1px solid var(--primary-text-color);
+    padding-top: 100px;
+}
+
+.privacy-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--title-text-color);
+}
+
+.privacy-list .item {
+    margin-top: 16px;
+
 }
 
 /* section */
