@@ -1,0 +1,9 @@
+{
+    "redirects": [
+      {
+        "source": "/продукція",
+        "destination": "/#продукція",
+        "permanent": false
+      }
+    ]
+  }

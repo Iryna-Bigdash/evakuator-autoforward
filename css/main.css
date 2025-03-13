@@ -109,17 +109,20 @@
 
 .menu-container {
     display: none;
+    padding: 40px;
+    font-size: 22px;
 
     position: absolute;
     top: 100%;
     right: 0;
-    min-width: 50%;
-    font-size: 22px;
+    min-width: 50vw;
+    height: 50vh;
     background: rgba(33, 150, 243, 0.7);
     backdrop-filter: blur(10px);
     border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
-    padding: 40px;
+
 }
 
 
