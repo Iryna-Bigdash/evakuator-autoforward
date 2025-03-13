@@ -119,7 +119,8 @@
 
     min-width: 50%;
     min-height: 50vh;
-    background: rgba(33, 150, 243, 0.7);
+    background: var(--accent-blue);
+
     backdrop-filter: blur(10px);
     border-radius: 4px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
