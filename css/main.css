@@ -450,18 +450,18 @@
 
 /* privacy-policy page */
 
-.privacy-header {
-    padding: 20px 0;
+.privacy-header.page-header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background: white;
-    /* Додай фон, щоб не перекривалося контентом */
     z-index: 1000;
-    /* Щоб хедер був поверх інших елементів */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Невелика тінь для розділення */
+}
+
+.privacy-header.page-header .container {
+    background: inherit;
 }
 
 .privacy-header .back {

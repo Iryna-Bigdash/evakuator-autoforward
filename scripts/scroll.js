@@ -2,8 +2,6 @@ document.querySelectorAll('.nav-list a').forEach(link => {
   link.addEventListener('click', function (event) {
     event.preventDefault();
 
-    console.log(document.querySelectorAll('.nav-list a'));
-
     let targetId = this.getAttribute('href').split('#')[1];
     let targetElement = document.getElementById(targetId);
 
