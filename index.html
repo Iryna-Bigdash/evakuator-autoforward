@@ -37,23 +37,27 @@
             <div class="menu-container" data-menu id="menu-container">
               <ul class="nav-list">
                 <li class="item">
-                  <a href="index.html#price">Ціни</a>
+                  <a href="index.html#price" class="menu-link">Ціни</a>
                 </li>
 
                 <li class="item">
-                  <a href="index.html#preferences">Наші переваги</a>
+                  <a href="index.html#preferences" class="menu-link"
+                    >Наші переваги</a
+                  >
                 </li>
 
                 <li class="item">
-                  <a href="index.html#order-details">Виклик евакуатора</a>
+                  <a href="index.html#order-details" class="menu-link"
+                    >Виклик евакуатора</a
+                  >
                 </li>
 
                 <li class="item">
-                  <a href="index.html#reviews">Відгуки</a>
+                  <a href="index.html#reviews" class="menu-link">Відгуки</a>
                 </li>
 
                 <li class="item">
-                  <a href="index.html#about">Про нас</a>
+                  <a href="index.html#about" class="menu-link">Про нас</a>
                 </li>
               </ul>
             </div>
@@ -296,7 +300,12 @@
       <section class="section order-details no-padding" id="order-details">
         <div class="container">
           <h2 class="section-title">Які дані надати при виклику евакуатора?</h2>
-          <div class="img-thumb"></div>
+          <div class="img-thumb">
+            <img
+              src="./images/photo-evakuator-min.jpeg"
+              alt="Евакуатор АвтоФорвард транспортує автомобілі з Одеси до Києва"
+            />
+          </div>
           <h3 class="secondary-title">
             Для швидкої подачі евакуатора в будь-який район Києва повідомте
             нашому оператору такі дані:
@@ -546,7 +555,7 @@
     <script defer src="./scripts/mobile-menu.js"></script>
     <script defer src="./scripts/scroll.js"></script>
 
-    <a href="tel:+380960200013" class="sticky-call-btn">
+    <a href="tel:+380960200013" class="sticky-call-btn" aria-label="Подзвонити">
       <svg class="call-icon">
         <use href="./images/icons.svg#icon-support" />
       </svg>

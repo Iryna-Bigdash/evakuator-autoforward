@@ -143,13 +143,18 @@
     transition: opacity 350ms var(--transition-func), transform 350ms ease-out;
 }
 
+.menu-link {
+    display: inline-block;
+    width: 100%;
+}
+
 /* hero */
 .hero .container {
     text-align: end;
     padding: 40px 20px;
     background-image:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
-        url('../images/banner-opacity.png');
+        url('../images/banner-opacity-min.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left center;
@@ -240,17 +245,31 @@
 
 
 /* price section */
+
 .price-list {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 20px;
 }
 
+@media screen and (min-width: 290px) {
+    .price-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
 .price-list .item {
-    flex-basis: calc((100% - 30px) / 2);
     align-items: center;
     padding: 10px;
 }
+
+@media screen and (min-width: 290px) {
+    .price-list .item {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+}
+
+
 
 .icon-thumb {
     margin-bottom: 10px;
@@ -280,14 +299,23 @@
     gap: 10px;
 }
 
-.preferences-list .item {
+.preferences-list {
     padding: 10px;
-    display: flex;
-    gap: 20px;
     align-items: center;
 }
 
-.preferences-list .item:nth-child(2n) {
+
+
+@media screen and (min-width: 290px) {
+
+    .preferences-list .item {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+
+.preferences-list .item .preferences-list .item:nth-child(2n) {
     background-color: var(--secondary-bg-color);
 }
 
@@ -312,15 +340,10 @@
 
 .order-details .img-thumb {
     margin-bottom: 20px;
-    max-width: 450px;
-    max-height: 450px;
+    max-width: 350px;
+    max-height: 350px;
     margin-left: auto;
     margin-right: auto;
-
-    background-image: url('../images/customer-service.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     background-color: #444;
 }
 
@@ -350,7 +373,7 @@
     width: 100%;
     height: 300px;
     background-color: #f7f7f7;
-    background-image: url('../images/ukraine-map.png');
+    background-image: url('../images/ukraine-map-min.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
