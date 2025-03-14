@@ -45,7 +45,6 @@
     z-index: 991;
 }
 
-
 .main-nav {
     display: flex;
     align-items: center;
@@ -154,11 +153,12 @@
     padding: 40px 20px;
     background-image:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
-        url('../images/banner-opacity-min.png');
+        url('../images/banner-opacity-min.webp');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left center;
 }
+
 
 .hero-title {
     color: var(--primary-white-color);
@@ -340,11 +340,10 @@
 
 .order-details .img-thumb {
     margin-bottom: 20px;
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 400px;
+    max-height: 300px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #444;
 }
 
 .evacuation-list li,
@@ -373,7 +372,7 @@
     width: 100%;
     height: 300px;
     background-color: #f7f7f7;
-    background-image: url('../images/ukraine-map-min.png');
+    background-image: url('../images/ukraine-map-min.webp');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
