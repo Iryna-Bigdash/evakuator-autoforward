@@ -11,7 +11,7 @@ document.querySelectorAll('.nav-list a').forEach(link => {
       const targetPosition = targetElement.offsetTop;
 
       window.scrollTo({
-        top: targetPosition - pageHeaderHeight - 10,
+        top: targetPosition - pageHeaderHeight,
         behavior: 'smooth',
       });
 
