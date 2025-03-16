@@ -360,6 +360,10 @@
     font-weight: bold;
 }
 
+.evacuation-info {
+    margin-top: 10px;
+}
+
 .text-blue {
     color: var(--accent-blue);
 }
