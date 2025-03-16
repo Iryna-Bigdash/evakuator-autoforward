@@ -8,6 +8,37 @@
     --transition-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 
 body {
     color: var(--primary-text-color);
@@ -26,10 +57,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-
-/* li {
-    outline: 1px solid yellowgreen;
-} */
 
 a {
     text-decoration: none;
