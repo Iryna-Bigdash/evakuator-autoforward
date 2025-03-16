@@ -316,7 +316,7 @@
 }
 
 
-.preferences-list .item .preferences-list .item:nth-child(2n) {
+.preferences-list .item:nth-child(odd) {
     background-color: var(--secondary-bg-color);
 }
 
@@ -330,16 +330,9 @@
     height: 100px;
 }
 
-.preferences-discription .secondary-title {
-    margin-bottom: 10px;
-}
-
 /* order-details */
-.order-details .secondary-title {
-    margin-bottom: 10px;
-}
 
-.order-details .img-thumb {
+.img-thumb {
     margin-bottom: 20px;
     max-width: 400px;
     max-height: 300px;
@@ -522,7 +515,8 @@
 /* section */
 
 .services-subtitle {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    color: #444;
 }
 
 .section {
@@ -547,6 +541,8 @@
 .secondary-title {
     color: #212121;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 
 @media (max-width: 490px) {
