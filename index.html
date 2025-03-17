@@ -18,8 +18,6 @@
     <title>
       Евакуатор у Києві та області – швидко, недорого, без прихованих платежів
     </title>
-    <link rel="preload" as="image" href="./images/banner-small.webp" />
-
     <link
       rel="preload"
       href="fonts/Oswald-Bold.woff2"
@@ -123,10 +121,26 @@
       <!-- Hero -->
       <section class="section hero no-padding">
         <div class="container">
-          <div class="hero-banner lazy-bg" data-bg="./images/banner.webp">
+          <div class="overlay"></div>
+          <picture>
+            <source srcset="./images/banner-small.webp" type="image/webp" />
+            <img
+              src="./images/banner-small.jpg"
+              alt="Евакуатор в Україні, транспортування легкового автомобіля, швидка допомога на дорозі, працюємо 24/7"
+              class="hero-image"
+              fetchpriority="high"
+              decoding="async"
+              loading="lazy"
+            />
+          </picture>
+
+          <div class="hero-text-container">
             <h1 class="hero-title">ЕВАКУАТОР В УКРАЇНІ</h1>
-            <p class="hero-subtitle">Швидка подача</p>
-            <p class="hero-subtitle">Прозора ціна</p>
+
+            <div class="hero-subtitles">
+              <p class="hero-subtitle">Швидка подача</p>
+              <p class="hero-subtitle">Прозора ціна</p>
+            </div>
 
             <a href="tel:+380960200013" class="button primary tel-link">
               <svg class="support-icon">
@@ -134,8 +148,9 @@
               </svg>
               +380 (96) 020 00 13
             </a>
-            <p class="hero-text">*приїдемо за 25хв</p>
           </div>
+
+          <p class="hero-text">*приїдемо за 25хв</p>
         </div>
       </section>
 
