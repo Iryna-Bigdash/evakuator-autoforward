@@ -320,7 +320,6 @@
 }
 
 /* price section */
-
 .price-list {
     margin-bottom: 20px;
 }
@@ -474,6 +473,11 @@
     font-size: 17px;
 }
 
+/* services-bg */
+.services {
+    background-color: var(--secondary-bg-color);
+}
+
 /* reviews */
 .reviews {
     background-color: var(--secondary-bg-color);
@@ -527,6 +531,11 @@
 
 /* about */
 .about p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* eu-delivery-text */
+.eu-delivery-text {
     margin-bottom: 10px;
 }
 
