@@ -145,58 +145,40 @@
     width: 100%;
 }
 
-.hero .container {
-    position: relative;
-    padding: 40px 20px;
-}
+/* hero */
 
-.hero-banner {
+.hero-slider {
     position: relative;
     width: 100%;
+    height: 420px;
+    overflow: hidden;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.swiper-slide {
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.hero-text-container {
-    position: absolute;
-    top: 0;
-    right: 0;
+.hero .slader-1 {
     text-align: end;
-    z-index: 2;
-    color: var(--primary-text-color);
-    padding: 20px;
-    width: 100%;
-    height: 80%;
-
+    padding: 40px 20px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+        url('../images/banner-small.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
-@media (min-width: 409px) {
-    .hero-text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
+.hero .slader-2 {
+    text-align: end;
+    padding: 40px 20px;
+    background-color: #000;
 }
 
-
-@media (min-width: 410px) {
-    .hero-text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-        flex-basis: calc((100% - 30px) / 4);
-    }
+.hero-contacts-list {
+    margin-bottom: 40px;
 }
 
 .hero-title {
@@ -206,7 +188,7 @@
     text-transform: uppercase;
     line-height: 1.615;
     letter-spacing: 0.04em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 364px) and (max-width: 409px) {
@@ -218,7 +200,6 @@
 @media (min-width: 410px) {
     .hero-title {
         font-size: 30px;
-        margin-bottom: 0;
     }
 }
 
@@ -229,12 +210,6 @@
     text-transform: uppercase;
     line-height: 1.6;
     letter-spacing: 0.04em;
-}
-
-@media (max-width: 319px) {
-    .hero-subtitle {
-        display: none;
-    }
 }
 
 @media (min-width: 364px) and (max-width: 409px) {
@@ -249,25 +224,18 @@
     }
 }
 
+
 .hero-text {
-    position: absolute;
     text-align: start;
     color: var(--accent-yellow);
-    z-index: 2;
 }
 
 
 .tel-link {
-    margin-top: 10px;
+    margin-top: 20px;
     display: inline-flex;
     align-items: center;
     gap: 12px;
-}
-
-@media (min-width: 320px) {
-    .tel-link {
-        margin-top: 20px;
-    }
 }
 
 .support-icon {
@@ -633,7 +601,7 @@
     line-height: 1.14;
     border-radius: 6px;
     border: 1px solid transparent;
-    padding: 11px 18px;
+    padding: 8px 12px;
     min-width: 120px;
     text-align: center;
 

@@ -49,6 +49,13 @@
     <link rel="stylesheet" href="css/modern-normalize.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -117,8 +124,70 @@
       </div>
     </header>
     <main>
-      <!-- Hero -->
       <section class="section hero no-padding">
+        <div class="hero-slider swiper-container">
+          <!-- Слайди -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slader-1">
+              <div class="container hero-banner overlay">
+                <h1 class="hero-title">ЕВАКУАТОР В УКРАЇНІ</h1>
+                <p class="hero-subtitle">Швидка подача</p>
+                <p class="hero-subtitle">Прозора ціна</p>
+                <ul class="hero-contacts-list">
+                  <li>
+                    <a href="tel:+380960200013" class="button primary tel-link">
+                      <svg class="support-icon">
+                        <use href="./images/icons.svg#icon-support-1" />
+                      </svg>
+                      +380 (96) 020 00 13
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+3???" class="button primary tel-link">
+                      <svg class="support-icon">
+                        <use href="./images/icons.svg#icon-support-1" />
+                      </svg>
+                      +380 ????
+                    </a>
+                  </li>
+                </ul>
+                <p class="hero-text">*приїдемо за 25хв</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide slader-2">
+              <div class="container hero-banner overlay">
+                <h1 class="hero-title">Перевезення aвто з Європи</h1>
+                <p class="hero-subtitle">Гарантія безпеки</p>
+                <p class="hero-subtitle">Прозора ціна</p>
+                <ul class="hero-contacts-list">
+                  <li>
+                    <a href="tel:+380960200013" class="button primary tel-link">
+                      <svg class="support-icon">
+                        <use href="./images/icons.svg#icon-support-1" />
+                      </svg>
+                      +380 (96) 020 00 13
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+3???" class="button primary tel-link">
+                      <svg class="support-icon">
+                        <use href="./images/icons.svg#icon-support-1" />
+                      </svg>
+                      +380 ????
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Пагінація -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Hero -->
+      <!-- <section class="section hero no-padding">
         <div class="container">
           <div class="overlay"></div>
           <picture>
@@ -164,7 +233,7 @@
 
           <p class="hero-text">*приїдемо за 25хв</p>
         </div>
-      </section>
+      </section> -->
 
       <!-- how to order -->
       <section class="section">
@@ -865,6 +934,8 @@
     </footer>
     <script defer src="./scripts/mobile-menu.js"></script>
     <script defer src="./scripts/scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
 
     <a href="tel:+380960200013" class="sticky-call-btn" aria-label="Подзвонити">
       <svg class="call-icon">
