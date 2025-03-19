@@ -283,7 +283,11 @@ button {
 .hero .slader-2 {
     text-align: end;
     padding: 40px 0px;
-    background-color: #000;
+    background-image:
+        url('../images/banner-small-2.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
 .swiper-pagination {
