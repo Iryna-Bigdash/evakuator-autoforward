@@ -41,7 +41,7 @@
 .page-header .container {
     border-bottom: 2px solid var(--primary-white-color);
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
-    padding: 20px 20px;
+    padding: 20px;
 }
 
 .main-nav {
@@ -53,7 +53,7 @@
     color: var(--accent-yellow);
     font-family: Oswald, sans-serif;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 1.19;
     letter-spacing: -0.5px;
     margin-right: auto;
@@ -61,16 +61,12 @@
 
 @media (max-width: 410px) {
     .logo {
-        font-size: 26px;
+        font-size: 32px;
     }
 }
 
 .logo-blue {
     color: var(--accent-blue);
-}
-
-.nav-list {
-    margin-left: auto;
 }
 
 .nav-list .item {
@@ -80,6 +76,14 @@
 .nav-list .item a {
     color: var(--title-text-color);
     line-height: 1.14;
+
+}
+
+.nav-list .item:hover a,
+.nav-list .item:focus a {
+    color: var(--primary-white-color);
+
+    transition: color 300ms var(--transition-func);
 }
 
 .menu-button {
@@ -146,6 +150,10 @@
 }
 
 /* hero */
+.hero.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 .hero-slider {
     position: relative;
@@ -163,7 +171,7 @@
 
 .hero .slader-1 {
     text-align: end;
-    padding: 40px 20px;
+    padding: 40px 0px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
         url('../images/banner-small.webp');
     background-size: contain;
@@ -173,7 +181,7 @@
 
 .hero .slader-2 {
     text-align: end;
-    padding: 40px 20px;
+    padding: 40px 0px;
     background-color: #000;
 }
 
